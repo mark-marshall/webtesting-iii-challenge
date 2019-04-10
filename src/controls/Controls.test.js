@@ -25,18 +25,14 @@ describe('<Controls />', () => {
     const wrap = rt.render(<Controls closed={true} />);
     expect(wrap.getByText(/open gate/i));
   });
-  it('close/open button set to close gate if the door is in open state', () => {
-    const wrap = rt.render(<Controls closed={false} />);
-    expect(wrap.getByText(/close gate/i));
-  });
   it('close/open button is disabled if the gate is locked', () => {
     const wrap = rt.render(<Controls closed={true} locked={true} />);
     const coButton = wrap.queryByTestId(/closedButton/i);
-    expect(coButton.disabled).toBe(true);
+    expect(coButton.disabled);
   });
   it('lock/unlock button is disabled if the gate is open', () => {
-    const wrap = rt.render(<Controls open={true} />);
+    const wrap = rt.render(<Controls closed={false} />);
     const luButton = wrap.queryByTestId(/lockedButton/i);
-    expect(luButton.disabled).toBe(true);
+    expect(luButton.disabled);
   });
 });
