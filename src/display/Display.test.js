@@ -38,4 +38,16 @@ describe('<Display />', () => {
     const wrap = rt.render(<Display locked={0} />);
     expect(wrap.getAllByText(/unlocked/i));
   });
+//   it('uses the red-led class when locked', () => {
+//     const wrap = rt.render(<Display locked={true}/>);
+//   });
+//   it('uses the red-led class when closed', () => {
+//     const wrap = rt.render(<Display closed={true}/>);
+//   });
+//   it('uses the green-led class when unlocked', () => {
+//     const wrap = rt.render(<Display locked={false}/>);
+//   });
+//   it('uses the green-led class when open', () => {
+//     const wrap = rt.render(<Display closed={false}/>);
+//   });
 });
