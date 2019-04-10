@@ -28,11 +28,11 @@ describe('<Controls />', () => {
   it('close/open button is disabled if the gate is locked', () => {
     const wrap = rt.render(<Controls closed={true} locked={true} />);
     const coButton = wrap.queryByTestId(/closedButton/i);
-    expect(coButton.disabled);
+    expect(coButton.disabled).toBeTruthy();
   });
   it('lock/unlock button is disabled if the gate is open', () => {
     const wrap = rt.render(<Controls closed={false} />);
     const luButton = wrap.queryByTestId(/lockedButton/i);
-    expect(luButton.disabled);
+    expect(luButton.disabled).toBeTruthy();
   });
 });

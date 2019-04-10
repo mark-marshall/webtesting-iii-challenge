@@ -48,18 +48,18 @@ describe('<Display />', () => {
   });
   it('uses the red-led class when locked', () => {
     const wrap = rt.render(<Display locked={true} />);
-    expect(wrap.getByTestId(/lockedDiv/i).classList.contains('red-led')).toBe(true);
+    expect(wrap.getByTestId(/lockedDiv/i).classList.contains('red-led')).toBeTruthy();
   });
   it('uses the red-led class when closed', () => {
     const wrap = rt.render(<Display closed={true} />);
-    expect(wrap.getByTestId(/closedDiv/i).classList.contains('red-led')).toBe(true);
+    expect(wrap.getByTestId(/closedDiv/i).classList.contains('red-led')).toBeTruthy();
   });
   it('uses the green-led class when unlocked', () => {
     const wrap = rt.render(<Display locked={false} />);
-    expect(wrap.getByTestId(/lockedDiv/i).classList.contains('green-led')).toBe(true);
+    expect(wrap.getByTestId(/lockedDiv/i).classList.contains('green-led')).toBeTruthy();
   });
   it('uses the green-led class when open', () => {
     const wrap = rt.render(<Display closed={false} />);
-    expect(wrap.getByTestId(/closedDiv/i).classList.contains('green-led')).toBe(true);
+    expect(wrap.getByTestId(/closedDiv/i).classList.contains('green-led')).toBeTruthy();
   });
 });
