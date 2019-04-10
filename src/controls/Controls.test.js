@@ -17,7 +17,7 @@ describe('<Controls />', () => {
     const wrap = rt.render(<Controls />);
     expect(wrap.getByTestId(/closedButton/i));
   });
-  it('renders the controling the locked state', () => {
+  it('renders button for controling the locked state', () => {
     const wrap = rt.render(<Controls />);
     expect(wrap.getByTestId(/lockedButton/i));
   });
