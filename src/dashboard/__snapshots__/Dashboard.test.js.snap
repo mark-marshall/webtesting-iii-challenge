@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dashboard /> renders the controls 1`] = `
+<DocumentFragment>
+  <div
+    class="display panel"
+    data-testid="displayDiv"
+  >
+    <div
+      class="led green-led"
+      data-testid="lockedDiv"
+    >
+      Unlocked
+    </div>
+    <div
+      class="led green-led"
+      data-testid="closedDiv"
+    >
+      Open
+    </div>
+  </div>
+  <div
+    class="controls panel"
+    data-testid="controlDiv"
+  >
+    <button
+      class="toggle-btn"
+      data-testid="lockedButton"
+      disabled=""
+    >
+      Lock Gate
+    </button>
+    <button
+      class="toggle-btn"
+      data-testid="closedButton"
+    >
+      Close Gate
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Dashboard /> renders the display 1`] = `
+<DocumentFragment>
+  <div
+    class="display panel"
+    data-testid="displayDiv"
+  >
+    <div
+      class="led green-led"
+      data-testid="lockedDiv"
+    >
+      Unlocked
+    </div>
+    <div
+      class="led green-led"
+      data-testid="closedDiv"
+    >
+      Open
+    </div>
+  </div>
+  <div
+    class="controls panel"
+    data-testid="controlDiv"
+  >
+    <button
+      class="toggle-btn"
+      data-testid="lockedButton"
+      disabled=""
+    >
+      Lock Gate
+    </button>
+    <button
+      class="toggle-btn"
+      data-testid="closedButton"
+    >
+      Close Gate
+    </button>
+  </div>
+</DocumentFragment>
+`;
